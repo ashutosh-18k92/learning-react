@@ -2,6 +2,8 @@ import React from 'react';
 import './App.css';
 import Greet from './components/functional/Greet'
 import Welcome from './components/class/Welcome'
+import Message from './components/class/Message'
+
 
 function App() {
   return (
@@ -15,7 +17,11 @@ function App() {
         <p>Learning parameter passing in Class components</p>
       </Welcome>
 
-      <Welcome><p>JSX functions are pure functions - props are immutable.</p></Welcome>
+      <Welcome>
+        <p>JSX functions are pure functions - props are immutable.</p>
+        </Welcome>
+
+        <Message />
     </div>
   );
 }
